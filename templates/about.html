@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/header&footer.css">
+    <link rel="stylesheet" href="/static/about.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">LOGO</label>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('result') }}">Login</a></li>
+        </ul>
+    </nav>
+    <div class="div1">
+        <div class="content">
+            <div class="img">
+                <img src="{{ url_for('static', filename='images/silhouette-of-team-work-photo.jpg') }}" alt="about image" srcset="">
+            </div>
+            <div class="text">
+                <h1>About Us</h1>
+                <p>Random Forest is a popular machine learning algorithm that belongs to the supervised learning technique. It can be used for both Classification and Regression problems in ML. It is based on the concept of ensemble learning, which is a process of combining multiple classifiers to solve a complex problem and to improve the performance of the model.</p>
+                <p> As the name suggests, "Random Forest is a classifier that contains a number of decision trees on various subsets of the given dataset and takes the average to improve the predictive accuracy of that dataset." Instead of relying on one decision tree, the random forest takes the prediction from each tree and based on the majority votes of predictions, and it predicts the final output.
+                </p>
+
+            </div>
+        </div>
+        <div class="content">
+            <div class="img">
+                <img src="{{ url_for('static', filename='images/download (3).jfif') }}" alt="about image" srcset="">
+            </div>
+            <div class="text">
+                <h1>Random Forest</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur
+                     adipisicing elit. Veritatis culpa est magni odio aut ducimus delectus sint! Non, nobis.
+                      Veritatis magnam quam cumque, aperiam commodi corrupti nesciunt ducimus. Est, maxime.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, dolor. Soluta, rerum fugiat excepturi, numquam cupiditate reprehenderit odit quia tempore aperiam ullam voluptatem doloremque amet nisi obcaecati similique nostrum eveniet!</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Desgin by </h4>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+</body>
+</html>
