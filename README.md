@@ -2,7 +2,7 @@
 
 ## Experimental Design
 
-- **Algorithm Selection**: This research is basically based on whether the performance of a Neural Network would significantly differ if one part of the algorithm's configuration is changed. Firstly, a multi-layer perceptron with 1-hidden layer was trained followed by a multi-layer perceptron with 2 hidden layers. Most of the parameters were tuned using Gridsearch algorithm followed by Trial and Error and, the rest were used as default provided by the Keras library.
+- **Algorithm Selection**: This research is basically based on whether the performance of a Neural Network would significantly differ if one part of the algorithm's configuration is changed. Firstly, a multi-layer perceptron with 1-hidden layer was trained followed by a multi-layer perceptron with 2 hidden layers. 
 
 - **Testable Hypothesis**: A neural network's performance on the Credit-Card Fraud dataset is affected by the number of hidden layers.
   - **Null Hypothesis (H0)**: Insufficient evidence to support the hypothesis.
