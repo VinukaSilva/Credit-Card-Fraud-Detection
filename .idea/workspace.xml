@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="268acc6a-f1cd-472f-bcf3-f65183271a1e" name="Changes" comment="" />
+    <list default="true" id="268acc6a-f1cd-472f-bcf3-f65183271a1e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Prediction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction.ipynb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
