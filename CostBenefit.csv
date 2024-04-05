@@ -1,0 +1,19 @@
+Cost Benefit Analysis,,
+S. No,Questions,Answer
+a,Average number of transactions per month,77183
+b,Average number of fraudulent transaction per month,402
+c,Average amount per fraud transaction,$530.00
+,,
+,,
+,,
+,,
+Cost Benefit Analysis,,
+S. No,Questions,Answer
+1,Cost incurred per month before the model was deployed                                                                                    (avg no of fraud transaction) * (avg amt / fraud transaction),"$213,060.00"
+2,Average number of transactions per month detected as fraudulent by the model (TF),2011
+3,Cost of providing customer executive support per fraudulent transaction (Assumption),$1.50
+4,Total cost of providing customer support per month for fraudulent transactions detected by the model (TF*$1.5),"$3,016.50"
+5,Average number of transactions per month that are fraudulent but not detected by the model (FN),61
+6,Cost incurred due to fraudulent transactions left undetected by the model (FN*c),"$32,330.00"
+7,Cost incurred per month after the model is built and deployed             (TF*$1.5) + [ (FN) * (avg amt / fraud transaction) ],"$35,346.50"
+8,Final savings = Cost incurred before - Cost incurred after (1-7),"$177,713.50"

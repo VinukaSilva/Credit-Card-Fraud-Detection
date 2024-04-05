@@ -1,0 +1,60 @@
+{% extends "index.html" %}
+{% load static %}
+{% block title %}
+Home | Fraud Detection System
+{% endblock %}
+{% block css %}
+
+<link href="{% static 'assets/css/teststyle.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<main id="main" >
+
+  <!-- ======= Hero Section ======= -->
+  <section id="homesection" style="padding: 0px 0px;">
+   <!--__________________________________ header-box______________________________________________ -->
+<div id="header-container">
+  <h1 id="header2">USER DASHBOARD</h1>
+</div>
+<!-- ___________________________________main-division____________________________________________ -->
+<div id="main-container">
+  <div class="inner-box">
+    <svg viewBox="0 0 80 80" width="200px" height="200px">
+      <a href="{% url 'upload_credit_data' %}">
+        <circle class="circle" cx="40" cy="40" r="38"/>
+        <svg x="32" y="17" xmlns="http://www.w3.org/2000/svg" height="18" width="15.5" viewBox="0 0 384 512"><path fill="#FFFFFF" d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM216 408c0 13.3-10.7 24-24 24s-24-10.7-24-24V305.9l-31 31c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l72-72c9.4-9.4 24.6-9.4 33.9 0l72 72c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-31-31V408z"/></svg>
+        <text x="40" y="45" font-size="10px" fill="#FFFFFF" text-anchor="middle">Upload</text>
+        <text x="40" y="59" font-size="10px" fill="#FFFFFF" text-anchor="middle">Files</text></a>
+    </svg>
+  </div>
+
+  <div class="inner-box">
+    <svg viewBox="0 0 80 80" width="200px" height="200px">
+      <a href="{% url 'reports' %}">
+        <circle class="circle" cx="40" cy="40" r="38"/>
+        <svg x="33" y="16" xmlns="http://www.w3.org/2000/svg" height="18" width="15.5" viewBox="0 0 384 512">
+          <path fill="#FFFFFF" d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM112 256H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/>
+        </svg>
+        <text x="40" y="45" font-size="10px" fill="#FFFFFF" text-anchor="middle">Files</text>
+        <text x="40" y="59" font-size="10px" fill="#FFFFFF" text-anchor="middle">Report</text></a>
+    </svg>
+  </div>
+
+  <div class="inner-box">
+    <svg viewBox="0 0 80 80" width="200px" height="200px">
+      <a href="{% url 'account_details' %}">
+        <circle class="circle" cx="40" cy="40" r="38"/>
+        <svg x="30" y="13" xmlns="http://www.w3.org/2000/svg" height="28" width="20.25" viewBox="0 0 576 512">
+          <path fill="#FFFFFF" d="M528 160V416c0 8.8-7.2 16-16 16H320c0-44.2-35.8-80-80-80H176c-44.2 0-80 35.8-80 80H64c-8.8 0-16-7.2-16-16V160H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM272 256a64 64 0 1 0 -128 0 64 64 0 1 0 128 0zm104-48c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376z"/>
+        </svg>
+        <text x="40" y="46" font-size="10px" fill="#FFFFFF" text-anchor="middle">My</text>
+        <text x="40" y="59" font-size="10px" fill="#FFFFFF" text-anchor="middle">Account</text></a>
+    </svg>
+  </div>
+
+</div>
+  </section><!-- End Hero -->
+  </main>
+{% endblock %}
